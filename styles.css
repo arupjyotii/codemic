@@ -467,6 +467,17 @@ body {
     font-size: 1.2rem;
     line-height: 1.8;
     color: var(--text-secondary);
+    text-align: justify;
+}
+
+.drop-cap {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--hot-pink);
+    line-height: 1;
+    float: left;
+    margin-right: 0.1rem;
+    font-family: var(--font-primary);
 }
 
 /* ===================================
@@ -620,6 +631,8 @@ body {
     transition: var(--transition-bounce);
     background: var(--text-white);
     border: 5px solid var(--text-primary);
+    text-decoration: none;
+    display: block;
 }
 
 .work-card:nth-child(1) {
@@ -677,8 +690,9 @@ body {
 .work-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: var(--transition-normal);
+    background: var(--text-white);
 }
 
 .work-card:hover .work-image {
@@ -1001,19 +1015,27 @@ body {
     flex-wrap: wrap;
 }
 
-.footer-links a {
-    color: var(--text-white);
-    text-decoration: none;
-    font-weight: 600;
-    text-transform: uppercase;
-    transition: var(--transition-fast);
-    padding: 0.5rem 1rem;
-    border: 2px solid transparent;
+.footer-address {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-.footer-links a:hover {
+.footer-address h3 {
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    font-weight: 800;
     color: var(--cyber-yellow);
-    border-color: var(--cyber-yellow);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.footer-address p {
+    color: var(--text-white);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
 }
 
 .footer-bottom {
