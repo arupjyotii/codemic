@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Codemic Co. - We build modern software solutions that scale. Innovate. Build. Elevate.">
+    <meta name="keywords"
+        content="software development, web development, mobile apps, UI/UX design, cloud, devops, cybersecurity">
+    <meta name="author" content="Codemic Co.">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Codemic Co. - Innovate. Build. Elevate.">
+    <meta property="og:description" content="We build modern software solutions that scale.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codemic.in">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Codemic Co. - Innovate. Build. Elevate.">
+    <meta name="twitter:description" content="We build modern software solutions that scale.">
+
+    <title>Codemic Co. - Innovate. Build. Elevate.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Welcome Modal -->
+    <div id="welcomeModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <h2>Welcome to Codemic Co.</h2>
+                <p>Let's build something amazing.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Codemic<span class="logo-accent">.</span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#works" class="nav-link">Works</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Codemic Co.</h1>
+            <p class="hero-subtitle">Innovate. Build. Elevate.</p>
+            <p class="hero-description">We will get your online in less than 7 days</p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Let's Build</a>
+                <a href="#works" class="btn btn-secondary">View Our Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Us</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <p class="about-text">
+                    Codemic is a SaaS & MVP development and technology consulting company dedicated to transforming
+                    ideas into impactful digital solutions. With a focus on innovation, quality and reliability. Codemic
+                    offers end-to-end services including website development, mobile applications, enterprise software
+                    and custom tech solutions. Our team combines creative design with robust engineering to deliver
+                    products that not only meet client requirements but also elevate their brand presence.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 18L22 12L16 6M8 6L2 12L8 18" />
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">Modern, responsive websites built with cutting-edge technologies.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2" />
+                            <path d="M12 18h.01" />
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Mobile App Development</h3>
+                    <p class="service-description">Native and cross-platform mobile applications.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                            <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                            <path d="M2 2l7.586 7.586" />
+                            <circle cx="11" cy="11" r="2" />
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Digital Marketing SEO/SMM</h3>
+                    <p class="service-description">Set aside the age old tactics of business and test the world of
+                        digital marketing</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+                        </svg>
+                    </div>
+                    <h3 class="service-title">IT Service & Custom Software Development</h3>
+                    <p class="service-description">Get a ERP, PMS, CRM software.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                        </svg>
+                    </div>
+                    <h3 class="service-title">E-Commerce Solutions</h3>
+                    <p class="service-description">Embrace the world of technology to amplify your business.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Software Maintenance</h3>
+                    <p class="service-description">Ongoing support and updates for your applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works" class="works section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Works</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="works-grid">
+                <div class="work-card">
+                    <div class="work-image-wrapper">
+                        <svg class="work-image" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#FF006E;stop-opacity:0.4" />
+                                    <stop offset="100%" style="stop-color:#00D9FF;stop-opacity:0.4" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="800" height="600" fill="#FAFAFA" />
+                            <circle cx="200" cy="150" r="80" fill="url(#grad1)" />
+                            <circle cx="600" cy="400" r="100" fill="url(#grad1)" />
+                            <rect x="150" y="250" width="500" height="200" fill="#FFFFFF" rx="0" stroke="#1A1A2E"
+                                stroke-width="6" />
+                            <text x="400" y="340" font-family="Arial" font-size="32" fill="#FF006E" text-anchor="middle"
+                                font-weight="bold">E-commerce Platform</text>
+                        </svg>
+                        <div class="work-overlay">
+                            <h3 class="work-title">E-commerce Platform</h3>
+                            <p class="work-category">Web Development</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-image-wrapper">
+                        <svg class="work-image" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#8AC926;stop-opacity:0.4" />
+                                    <stop offset="100%" style="stop-color:#FFBE0B;stop-opacity:0.4" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="800" height="600" fill="#FAFAFA" />
+                            <circle cx="400" cy="300" r="150" fill="url(#grad2)" />
+                            <rect x="250" y="200" width="300" height="400" fill="#FFFFFF" rx="0" stroke="#1A1A2E"
+                                stroke-width="6" />
+                            <text x="400" y="380" font-family="Arial" font-size="32" fill="#8AC926" text-anchor="middle"
+                                font-weight="bold">Fitness App</text>
+                        </svg>
+                        <div class="work-overlay">
+                            <h3 class="work-title">Fitness Tracking App</h3>
+                            <p class="work-category">Mobile Development</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-image-wrapper">
+                        <svg class="work-image" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:0.4" />
+                                    <stop offset="100%" style="stop-color:#9B59B6;stop-opacity:0.4" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="800" height="600" fill="#FAFAFA" />
+                            <rect x="100" y="100" width="600" height="400" fill="url(#grad3)" rx="0" />
+                            <rect x="150" y="150" width="500" height="80" fill="#FFFFFF" rx="0" stroke="#1A1A2E"
+                                stroke-width="6" />
+                            <rect x="150" y="260" width="500" height="200" fill="#FFFFFF" rx="0" stroke="#1A1A2E"
+                                stroke-width="6" />
+                            <text x="400" y="340" font-family="Arial" font-size="32" fill="#00D9FF" text-anchor="middle"
+                                font-weight="bold">Banking Dashboard</text>
+                        </svg>
+                        <div class="work-overlay">
+                            <h3 class="work-title">Banking Dashboard</h3>
+                            <p class="work-category">UI/UX Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-image-wrapper">
+                        <svg class="work-image" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#FFBE0B;stop-opacity:0.4" />
+                                    <stop offset="100%" style="stop-color:#FF5A5F;stop-opacity:0.4" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="800" height="600" fill="#FAFAFA" />
+                            <path d="M 200 500 Q 400 200 600 500" stroke="#FFBE0B" stroke-width="4" fill="none" />
+                            <circle cx="200" cy="500" r="20" fill="#FFBE0B" />
+                            <circle cx="400" cy="200" r="20" fill="#FFBE0B" />
+                            <circle cx="600" cy="500" r="20" fill="#FFBE0B" />
+                            <rect x="250" y="100" width="300" height="150" fill="url(#grad4)" rx="0" stroke="#1A1A2E"
+                                stroke-width="6" />
+                            <text x="400" y="190" font-family="Arial" font-size="28" fill="#FF5A5F" text-anchor="middle"
+                                font-weight="bold">Cloud Migration</text>
+                        </svg>
+                        <div class="work-overlay">
+                            <h3 class="work-title">Cloud Migration</h3>
+                            <p class="work-category">Cloud & DevOps</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-image-wrapper">
+                        <svg class="work-image" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#9B59B6;stop-opacity:0.4" />
+                                    <stop offset="100%" style="stop-color:#FF006E;stop-opacity:0.4" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="800" height="600" fill="#FAFAFA" />
+                            <circle cx="400" cy="300" r="120" fill="none" stroke="url(#grad5)" stroke-width="5" />
+                            <circle cx="400" cy="300" r="80" fill="none" stroke="url(#grad5)" stroke-width="5" />
+                            <rect x="380" y="180" width="40" height="80" fill="#9B59B6" rx="0" />
+                            <text x="400" y="450" font-family="Arial" font-size="32" fill="#FF006E" text-anchor="middle"
+                                font-weight="bold">Security Audit</text>
+                        </svg>
+                        <div class="work-overlay">
+                            <h3 class="work-title">Security Audit Tool</h3>
+                            <p class="work-category">Cybersecurity</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card coming-soon">
+                    <div class="coming-soon-content">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 6v6l4 2" />
+                        </svg>
+                        <h3>More Projects</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client Reviews</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="reviews-carousel">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "Codemic Co. transformed our digital presence completely. Their team delivered
+                        a stunning website that exceeded all our expectations. Highly recommended!"
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar">SM</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Sarah Mitchell</h4>
+                            <p class="author-role">CEO, TechStart Inc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "Working with Codemic was a game-changer. They built our mobile app from
+                        scratch and the results are phenomenal. Professional and innovative!"
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar">JC</div>
+                        <div class="author-info">
+                            <h4 class="author-name">James Chen</h4>
+                            <p class="author-role">Founder, FitLife</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "The UI/UX design they created for our platform is absolutely beautiful.
+                        Our users love it and engagement has increased by 300%!"
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar">EP</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Emily Parker</h4>
+                            <p class="author-role">Product Manager, FinanceHub</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <a href="mailto:hello@codemic.in">hello@codemic.in</a>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <h3>Arup Jyoti Lahkar</h3>
+                            <p>Tech Consultant, Codemic Co.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Codemic<span class="logo-accent">.</span></span>
+                    <p class="footer-tagline">Innovate. Build. Elevate.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#works">Works</a>
+                    <a href="#reviews">Reviews</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Codemic Co. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
